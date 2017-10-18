@@ -1,4 +1,5 @@
 require_relative('../models/student.rb')
+require('pry')
 
 student_1 = Student.new({
   "first_name" => "Harry",
@@ -8,3 +9,6 @@ student_1 = Student.new({
   })
 
 student_1.save()
+
+binding.pry
+nil
