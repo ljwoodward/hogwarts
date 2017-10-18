@@ -3,7 +3,7 @@ require_relative('../models/house.rb')
 require('pry')
 
 house1 = House.new({
-  "name" => "Gryffindor"
+  "name" => "Gryffindor",
   "logo" => "http://bit.ly/2zxGdiB"
   })
 
