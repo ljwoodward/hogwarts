@@ -46,4 +46,25 @@ end
     return result
   end
 
+  def house()
+    sql = "SELECT * FROM houses WHERE id = $1"
+    values = [@house_id]
+    results = SqlRunner.run(sql, values)
+    house_data = results[0]
+    house = House.new(house_data)
+    return house
+  end
+
+
+
+#   def customer()
+#   sql = "SELECT * FROM customers WHERE id = $1"
+#   values = [@customer_id]
+#   results = SqlRunner.run(sql, values)
+#   customer_data = results[0]
+#   customer = Customer.new(customer_data)
+#   return customer
+#
+# end
+
 end
